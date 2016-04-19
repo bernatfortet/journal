@@ -1,0 +1,51 @@
+body
+
+
+  +loginButtons
+
+  //if currentUser
+  .shell
+    //greatful
+    .day
+      +quote
+      +day
+
+
+  //else
+    +login
+
+
+template(name="login")
+    h1 login
+
+
+
+
+template(name="day")
+
+
+  h2 I am greatful for
+  input#greatful1(type="text" placeholder="for..." value="#{day.greatful1}")
+  input#greatful2(type="text" placeholder="for..." value="#{day.greatful2}")
+  input#greatful3(type="text" placeholder="for..." value="#{day.greatful3}")
+  //geat day
+
+  h2 What would make a great day?
+  input#greatDay1(type="text" placeholder="Do..." value="#{day.greatDay1}")
+  input#greatDay2(type="text" placeholder="Think about..." value="#{day.greatDay2}")
+  input#greatDay3(type="text" placeholder="Enjoy..." value="#{day.greatDay3}")
+
+  h2 Daily affirmations I am...
+  input#affirmation(type="text" placeholder="A person who..." value="#{day.affirmation}")
+
+  h2 3 amazing things that happened today
+  input#amazingThings1(type="text" placeholder="Talked to..." value="#{day.amazingThings1}")
+  input#amazingThings2(type="text" placeholder="Did..." value="#{day.amazingThings2}")
+  input#amazingThings3(type="text" placeholder="Experienced..." value="#{day.amazingThings3}")
+
+  h2 I could have made today better
+  input#betterDay(type="text" placeholder="by..." value="#{day.betterDay}")
+
+template(name="quote")
+    .text it's the possibility of having a dream come true that makes life interesting.”
+    .author –– Paulo Coelho
